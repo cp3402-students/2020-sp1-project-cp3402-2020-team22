@@ -1,4 +1,0 @@
-# .inputrc
-# enable bash history partial search for up/down arrows
-"\e[A": history-search-backward            # arrow up
-"\e[B": history-search-forward             # arrow down
