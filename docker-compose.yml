@@ -25,6 +25,7 @@ services:
        MYSQL_DATABASE: wordpress
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
+     command: "--innodb_use_native_aio=0"
 
 
 #volumes:
