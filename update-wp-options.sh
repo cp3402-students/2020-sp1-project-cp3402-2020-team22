@@ -12,9 +12,9 @@
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 DIR_NAME=$(basename $SCRIPTPATH)
 
-SITE_NAME=${1:-"My Wordpress Site"}
-SITE_DESCRIPTION=${2:-"Just another WordPress site"}
-IP_ADDR=$(localhost)
+SITE_NAME=${1:-"Townsville Jazz Club"}
+SITE_DESCRIPTION=${2:-"Townsville Jazz Club"}
+IP_ADDR=10.0.0.7
 DB_CONTAINER_NAME="${DIR_NAME,,}_db_1"
 
 echo "Setting wp_options in container $DB_CONTAINER_NAME ..."
