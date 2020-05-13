@@ -11,21 +11,21 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cp3402-2020-team22' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cp3402-2020-team22' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cp3402-2020-team22' ), 'cp3402-2020-team22', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+    <div class="site-info">
+        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cp3402-2020-team22' ) ); ?>">
+            <?php
+            /* translators: %s: CMS name, i.e. WordPress. */
+            printf( esc_html__( 'Proudly powered by %s', 'cp3402-2020-team22' ), 'WordPress' );
+            ?>
+        </a>
+        <span class="sep"> | </span>
+        <?php
+        /* translators: 1: Theme name, 2: Theme author. */
+        printf( esc_html__( 'Theme: %1$s by %2$s.', 'cp3402-2020-team22' ), 'cp3402-2020-team22', '<a href="http://underscores.me/">Underscores.me</a>' );
+        ?>
+    </div><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
