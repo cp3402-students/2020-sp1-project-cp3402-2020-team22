@@ -67,7 +67,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+	margin: 0 10% 0 10%;
 }
 
 /**
@@ -75,6 +75,7 @@ body {
  */
 main {
 	display: block;
+	margin-left: 2em;
 }
 
 /**
@@ -116,6 +117,14 @@ pre {
  */
 a {
 	background-color: transparent;
+}
+
+/**
+ * Remove link decorations.
+ */
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
 }
 
 /**
@@ -597,6 +606,79 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* Add a background color to the top navigation */
+.main-navigation {
+	background-color: #333;
+	overflow: hidden;
+}
+/* Move the menu to the right side of the screen */
+.menu-primary-container {
+	float: right;
+}
+
+/* Style the links inside the navigation bar */
+.main-navigation a {
+	float: right;
+	display: block;
+	color: gold;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.main-navigation a:hover {
+	background-color: gold;
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Active Page to highlight the current page */
+.main-navigation a.active {
+	background-color: gold;
+	color: black;
+}
+
+/* Hide menu burger for large screens */
+.main-navigation .icon {
+	display: none;
+}
+
+/* Style the site logo */
+.site-branding {
+	height: 160px;
+}
+
+img.custom-logo {
+	float: left;
+	overflow: auto;
+	display: block;
+}
+/* Display the site header to the right of the logo */
+.site-title {
+	display: inline;
+	vertical-align: top;
+	font-family: 'Poiret One', cursive;
+	font-size: xx-large;
+	color: black;
+}
+.site-title a:visited {
+	text-decoration: none;
+}
+.site-branding {
+	height: 160px; /* LOGO HEIGHT */
+}
+a.custom-logo-link {
+	overflow: hidden;
+	width: 160px; /* LOGO WIDTH */
+}
+
+img.custom-logo {
+	float: left;
+	overflow: auto;
+	display: block;
+}
 
 /*--------------------------------------------------------------
 ## Links
@@ -604,26 +686,6 @@ textarea {
 a {
 	color: #4169e1;
 }
-
-a:visited {
-	color: #800080;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: #191970;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
-}
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -637,35 +699,6 @@ a:active {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
 }
 
 .main-navigation li {
@@ -695,11 +728,11 @@ a:active {
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 }
 
 .comment-navigation .nav-links,
@@ -811,7 +844,7 @@ a:active {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 }
 
 .updated:not(.published) {
@@ -982,6 +1015,4 @@ object {
 .site-footer__wrap {
 	max-width: 1080px;
 	margin: 0 auto;
-}
-
 }

@@ -14,7 +14,7 @@ DIR_NAME=$(basename $SCRIPTPATH)
 
 SITE_NAME=${1:-"Townsville Jazz Club"}
 SITE_DESCRIPTION=${2:-"Townsville Jazz Club"}
-IP_ADDR=10.0.0.7
+IP_ADDR=192.168.1.150
 DB_CONTAINER_NAME="${DIR_NAME,,}_db_1"
 
 echo "Setting wp_options in container $DB_CONTAINER_NAME ..."
