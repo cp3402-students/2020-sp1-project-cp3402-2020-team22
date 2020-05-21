@@ -12,12 +12,11 @@
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 DIR_NAME=$(basename $SCRIPTPATH)
 
-SITE_NAME=${1:-"Townsville Jazz Club"}
-SITE_DESCRIPTION=${2:-"Welcome to Townsville Jazz Club"}
-IP_ADDR=10.0.0.7
-DB_CONTAINER_NAME="${DIR_NAME,,}_db_1"
+SITE_NAME=${1:-"My Wordpress Site"}
+SITE_DESCRIPTION=${2:-"Just another WordPress site"}
+IP_ADDR=192.168.99.100
 
-echo "Setting wp_options in container $DB_CONTAINER_NAME ..."
+echo "Setting wp_options ..."
 echo "  blogname=$SITE_NAME"
 echo "  blogdescription=$SITE_DESCRIPTION"
 echo "  siteurl=http://$IP_ADDR"
@@ -30,5 +29,5 @@ SITE_DESCRIPTION_PATTERN='s/__SITE_DESCRIPTION__/'$SITE_DESCRIPTION'/g'
 
 sed -e "$IP_ADDR_PATTERN" -e "$SITE_NAME_PATTERN" -e "$SITE_DESCRIPTION_PATTERN" < update-wp-options_TEMPLATE.sql > .update-wp-options.sql
 
-docker exec -i "${DB_CONTAINER_NAME}" sh -c 'exec mysql -uwordpress -pwordpress' < .update-wp-options.sql 2>&1 | grep -v "Using a password on the command line"
+docker exec -i "${DIR_NAME}_db_1" sh -c 'exec mysql -uwordpress -pwordpress' < .update-wp-options.sql 2>&1 | grep -v "Using a password on the command line"
 rm -f .update-wp-options.sql
