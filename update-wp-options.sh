@@ -14,7 +14,7 @@ DIR_NAME=$(basename $SCRIPTPATH)
 
 SITE_NAME=${1:-"My Wordpress Site"}
 SITE_DESCRIPTION=${2:-"Just another WordPress site"}
-IP_ADDR=$(./my-ip-addr.sh)
+IP_ADDR=10.0.0.7
 DB_CONTAINER_NAME="${DIR_NAME,,}_db_1"
 
 echo "Setting wp_options in container $DB_CONTAINER_NAME ..."
