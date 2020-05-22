@@ -12,8 +12,8 @@
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 DIR_NAME=$(basename $SCRIPTPATH)
 
-SITE_NAME=${1:-"My Wordpress Site"}
-SITE_DESCRIPTION=${2:-"Just another WordPress site"}
+SITE_NAME=${1:-"Townsville Jazz Club"}
+SITE_DESCRIPTION=${2:-"Welcome to Townsville Jazz Club"}
 IP_ADDR=192.168.99.100
 
 echo "Setting wp_options ..."
