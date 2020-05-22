@@ -618,6 +618,7 @@ textarea {
 /* Add a background color to the top navigation */
 .main-navigation {
 	background-color: #333;
+	background-color: rgba(50,50,50,0.95);
 	overflow: hidden;
 }
 /* Move the menu to the right side of the screen */
@@ -635,7 +636,19 @@ textarea {
 	text-decoration: none;
 	font-size: 17px;
 }
+li#menu-item-42 {
 
+}
+
+li#menu-item-42 a {
+	float: right;
+	display: block;
+	color: gold;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
 /* Change the color of links on hover */
 .main-navigation a:hover {
 	background-color: gold;
@@ -653,7 +666,17 @@ textarea {
 .main-navigation .icon {
 	display: none;
 }
-
+/* Small Screen Nav */
+nav#site-navigation {
+	position: relative;
+}
+.menu-toggle, .main-navigation.toggled ul {
+	display: block;
+	width: 100%;
+	background-color: black;
+	color: gold;
+	font-size: large;
+}
 /* Style the site logo */
 .site-branding {
 	height: 160px;
@@ -665,6 +688,7 @@ img.custom-logo {
 	display: block;
 }
 /* Display the site header to the right of the logo */
+
 .site-title {
 	display: inline;
 	vertical-align: top;
@@ -672,26 +696,48 @@ img.custom-logo {
 	font-size: xx-large;
 	color: black;
 }
-
-li#menu-item-42 {
-	background-image: url("/wp-content/uploads/f_logo_RGB-White_72.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
+.site-title a {
+	color: black;
+	font-size: 36pt;
+	max-height: 140px;
+	position: absolute;
 }
-
-li#menu-item-42 a {
-	font-size: 0;
-	padding: 26px 27px 27px 26px;
-}
-
 .site-title a:visited {
 	text-decoration: none;
 }
 .site-branding {
 	height: 160px; /* LOGO HEIGHT */
+}
+@media screen and (min-width: 1000px) {
+	.site-branding {
+		height: 160px; /* LOGO HEIGHT */
+		background-image: url(/wp-content/uploads/jazz_header.png);
+		background-size: contain;
+		background-position-x: 180px;
+		background-repeat: no-repeat;
+	}
+	.site-title {
+		display: none;
+	}
+}
+/* Small Menu Navigation */
+@media screen and (min-width: 600px) {
+	nav#site-navigation {
+		position: relative;
+	}
+	li#menu-item-42 {
+		background-image: url("/wp-content/uploads/f_logo_RGB-White_72.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+	}
+
+	li#menu-item-42 a {
+		font-size: 0;
+		padding: 26px 27px 27px 26px;
+	}
 }
 a.custom-logo-link {
 	overflow: hidden;
