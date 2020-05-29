@@ -55,5 +55,5 @@ It is recommended that you use Github Desktop to manage local repositories. It l
 
 # Servers
 
-Production Server: http://34.106.48.231/
-Live Server: http://67.207.83.145/
+- Production Server(Google Cloud): http://34.106.48.231/
+- Live Server(Digital Ocean): http://67.207.83.145/
