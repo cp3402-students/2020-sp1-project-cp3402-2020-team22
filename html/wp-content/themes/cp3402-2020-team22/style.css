@@ -406,6 +406,10 @@ h2 {
 	background: gold;
 	padding: 5px;
 	border-radius: 5px;
+        border-bottom: 2px solid goldenrod;
+        border-right: 2px solid goldenrod;
+}
+
 }
 p {
 	margin-bottom: 1.5em;
@@ -818,7 +822,10 @@ a {
 }
 .entry-meta {
 	margin-left: 20px;
-	margin-top: -16px;
+	margin-right: 20px;
+	margin-top: -20px;
+	background: goldenrod;
+	
 }
 .comment-navigation .nav-links,
 .posts-navigation .nav-links,
@@ -1110,8 +1117,16 @@ td.presenter {
 .overflow-x {
 	overflow-x: auto;
 }
-
-
+/* Membership info Table */
+.contact-table tr th {
+    text-align: left;
+    color: white;
+}
+.contact-table td {
+    color: white;
+    padding-bottom: .5em;
+    padding-left: 1em;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1176,7 +1191,14 @@ td.presenter {
 	margin-top: 0;
 	padding: 0;
 }
-
+.entry-meta {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    background: goldenrod;
+    padding-left: 1em;
+    border-radius: 0px 0px 10px 10px;
+}
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
@@ -1269,10 +1291,11 @@ object {
 	position: relative;
 	font-family: "Oswald", sans-serif;
 	color: black;
-	background-color: transparent
+	background-color: gold;
 	text-align: center;
-	border-radius: 25px;
+	border-radius: 0px;
         display: block;
+	padding: 0.25em;
 }
 
 .site-footer a {
@@ -1287,7 +1310,7 @@ object {
 
 @media screen and (min-width: 600px) {
 	.site-footer {
-		padding: 1em 2em;
+		padding: 0.25em;
 	}
 }
 
@@ -1301,4 +1324,10 @@ body {
   background: 
   linear-gradient(to right,transparent 10%, white 10%, white 90%,transparent 0)
   ,url('bg_img.jpg');
+}
+
+.has-luminous-vivid-amber-background-color {
+    background-color: gold !important;
+    border-bottom: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
 }
