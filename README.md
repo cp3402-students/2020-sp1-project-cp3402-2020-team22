@@ -35,13 +35,19 @@ It is recommended that you use Github Desktop to manage local repositories. It l
 ## MySQL Information
 
 MYSQL_ROOT_PASSWORD: somewordpress
+
 MYSQL_DATABASE: wordpress
+
 MYSQL_USER: wordpress
+
 MYSQL_PASSWORD: wordpress
 
 WORDPRESS_DB_HOST: db:3306
+
 WORDPRESS_DB_USER: wordpress
+
 WORDPRESS_DB_PASSWORD: wordpress
+
 WORDPRESS_DB_NAME: wordpress
 
 ## Wordpress Settings
