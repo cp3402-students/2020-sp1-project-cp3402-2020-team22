@@ -34,29 +34,26 @@ It is recommended that you use Github Desktop to manage local repositories. It l
 
 ## MySQL Information
 
-MYSQL_ROOT_PASSWORD: somewordpress
-
-MYSQL_DATABASE: wordpress
-
-MYSQL_USER: wordpress
-
-MYSQL_PASSWORD: wordpress
-
-WORDPRESS_DB_HOST: db:3306
-
-WORDPRESS_DB_USER: wordpress
-
-WORDPRESS_DB_PASSWORD: wordpress
-
-WORDPRESS_DB_NAME: wordpress
+| Username                 | Password        |
+|--------------------------|-----------------|
+| MYSQL_ROOT_PASSWORD      | somewordpress   |
+| MYSQL_DATABASE           | wordpress       |
+| MYSQL_USER               | wordpress       |
+| MYSQL_PASSWORD           | wordpress       |
+| MYSQL_ROOT_PASSWORD      | somewordpress   |
+| WORDPRESS_DB_HOST        | db:3306         |
+| WORDPRESS_DB_USER        | wordpress       |
+| WORDPRESS_DB_PASSWORD    | wordpress       |
+| WORDPRESS_DB_USER        | wordpress       |
 
 ## Wordpress Settings
-Username - admin
 
-Password - admin
+| Username                 | Password        |
+|--------------------------|-----------------|
+| Username                 | admin           |
+| Password                 | admin           |
 
 # Servers
 
 Production Server: http://34.106.48.231/
-
 Live Server: http://67.207.83.145/
