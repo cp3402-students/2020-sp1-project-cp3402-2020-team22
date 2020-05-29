@@ -1272,6 +1272,7 @@ object {
 	background-color: gold;
 	text-align: center;
 	border-radius: 25px;
+        display: none;
 }
 
 .site-footer a {
