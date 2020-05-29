@@ -4,6 +4,7 @@
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Git](https://git-scm.com)
+- Windows 10 Pro/Home [19040](https://blogs.windows.com/windowsexperience/2019/12/10/announcing-windows-10-insider-preview-build-19041/) If running Windows 10 Home you will require Windows 10 Home Build 19040.
 
 ## Recommended
 
